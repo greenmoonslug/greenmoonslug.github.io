@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>Forkdown2 | Wiki on Javascript</title>
+		<script type="text/javascript" src="./javascript/jquery.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./javascript/lightbox.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./javascript/forkdown.js" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/lightbox.css">
+		<link rel="stylesheet" href="css/css.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+	<body>
+		<div id="page-top"><p><span id="move-page-top">▲</span></p></div>
+		<nav></nav>
+		<form name="FORM" align="right">
+			<input type="text" name="box" value="" onkeypress="return submitStop(event);"/>
+			<input type="button" value="ジャンプ" onclick="jump()"/>
+		</form>
+		<div id="content"></div>
+		<footer>Greenmoonslug 2015</footer>
+		<script charset="utf-8">
+			$(document).ready(function(){
+				pageParse('#content','top_page');
+				createNavigate('nav',['top_page','about this>about']);
+			});
+		</script>
+	</body>
+</html>

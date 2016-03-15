@@ -1,0 +1,168 @@
+body{
+	font-family:Sans-Serif;
+	font-size:14px;
+	line-height:24px;
+	padding:10px 10px;
+	background-color:#fff;
+	color:#000;
+	font-size:16px;
+}
+
+
+a{
+	color:#00f;
+}
+
+#menu{
+  background-color:#dda;
+  padding:1em;
+}
+
+
+/*http://webkcampus.com/201411/829/*/
+.balloon {
+    position: relative;
+    background: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 10px;
+    width:75%;
+    padding:10px;
+    color:black;
+    text-align:left;
+    /*float: right;*/
+}
+
+.balloon:after,
+.balloon:before {
+    top: 30%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    right: 100%;
+}
+
+.balloon:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-width: 8px;
+    margin-top: -8px;
+    border-right-color: #fff;
+}
+.balloon:before {
+    border-color: rgba(200, 200, 200, 0);
+    border-width: 9px;
+    margin-top: -9px;
+    border-right-color: #c8c8c8;
+}
+
+
+
+blockquote{
+background-color:#ddd;
+padding:1em 1em 1em 3em;
+position:relative;
+font-style:oblique;
+}
+
+blockquote:before{
+content:"“";
+font-size:600%;
+line-height:1em;
+font-family:"ＭＳ Ｐゴシック",sans-serif;
+color:#000;
+position:absolute;
+left:0;
+top:0;
+}
+
+.indent{
+	padding-left:30px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+div{
+padding:5px;
+}
+#text{
+	margin:20px;
+}
+h2{
+	text-decoration:none;
+
+}
+
+h2:hover{
+	text-decoration:underline;
+}
+
+h3{
+	text-indent:0em;
+}
+
+li{
+margin:0px;/*
+list-style-type:none;*/
+list-style-position:outside;
+	text-align:left;
+}
+
+ul{
+margin:0px;
+}
+
+/*1.2.11*/
+#page-top{
+	width:50px;
+	height:50px;
+	display:none;
+	position:fixed;
+	right:16px;
+	bottom:16px;
+}
+ 
+#page-top p{
+	margin:0;
+	padding:0;
+	text-align:center;
+	background:#3b3b3b;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	transition:all 0.3s;
+}
+ 
+#page-top p:hover{
+	background:#8b8b8b;
+}
+ 
+#move-page-top{
+	color:#fff;
+	line-height:50px;
+	text-decoration:none;
+	display:block;
+	cursor:pointer;
+}
+
+/*1.4*/
+.stroageContent{
+    display:none;
+    padding-top:0;
+    padding-left:32px;
+    border:1px solid black;
+}
+
+.sButton{
+    display:inline-block;
+    border:1px solid black;
+    padding:0px 4px;
+    cursor:pointer;
+    position:absolute;
+}
+
+footer{
+  margin:10px;
+  padding-top:10px;
+  text-align:center;
+}
