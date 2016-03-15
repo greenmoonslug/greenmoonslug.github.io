@@ -199,8 +199,8 @@ function pageParse(selector,fileName,spin){//spinがtrueにあたる場合、縦
 						return output
 						.replace(/\[\[(\S+)\>(\S+)\]\]/g,"<a href='$2'>$1</a>" )
 						.replace(/\[\[(\S+)\]\]/g,"<a href=''>$1</a>" )
-					.replace(/\[([\w\.\/]+)\:\:(.*)\]/g,'<a class="image" href="./image/$1" data-title="$2" data-lightbox="image"><img src="./image/$1" width=160 alt=""/></a>')
-					.replace(/\[([\w\.\/]+)\]/g,'<a class="image" href="./image/$1" data-lightbox="image"><img src="./image/$1" width=160 alt=""/></a>')
+					.replace(/\[([\w\.\/]+)\:\:(.*)\]/g,'<a class="image" href="./images/$1" data-title="$2" data-lightbox="image"><img src="./images/$1" width=160 alt=""/></a>')
+					.replace(/\[([\w\.\/]+)\]/g,'<a class="image" href="./images/$1" data-lightbox="image"><img src="./images/$1" width=160 alt=""/></a>')
 					.replace(/===/g,"<hr/>" )
 					.replace(/\.\.(\w+)/g,'<span class="$1"></span>')
 					.replace(/\&br/g,"<br/>" );
